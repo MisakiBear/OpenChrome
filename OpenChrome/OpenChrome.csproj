@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationIcon>Chrome.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ConfReaderLib">
+      <HintPath>ConfReaderLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Path.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
